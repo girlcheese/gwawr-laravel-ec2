@@ -5,8 +5,9 @@ permalink: /about/
 navigation: true
 ---
 
-I'm a London-based Technical Director and Team Lead with over 20 years
-experience of building for the web. I've worked with some of the leading
-global brands across multiple vertical markets including Budweiser, Rizla
-The Premier League, Dulux, and many many more.
+I'm a London-based Technical Director and Team Lead with 20 years
+experience of building for the web. I work with leading
+global brands which include Asda, Budweiser, Dulux, HSBC, Nando's
+Premier Inn, Rizla, Sainsburys, The Premier League, Xbox and many
+many more.
 

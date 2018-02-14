@@ -18,9 +18,10 @@ email: pages@gwawr.co.uk
 description: > # this means to ignore newlines until "baseurl:"
   This is the site of Sam Carrington
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.gwawr.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gwawr_
 github_username:  girlcheese
+nano_wallet: xrb_3wsmhdnxjpqi9e6p8odehd1eikcekyurdf3fx4bo557so1hrwwiefiwmc5mu
 
 # Build settings
 markdown: kramdown

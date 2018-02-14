@@ -1,0 +1,36 @@
+<div id="nano-button"></div>
+<div id="nano-thanks" class="hide">
+  <p>Thanks for your donation!</p>
+</div>
+<script src="https://brainblocks.io/brainblocks.min.js"></script>
+
+<script>
+
+  if (document.cookie.replace(/(?:(?:^|.*;\s*)donated\s*\=\s*([^;]*).*$)|^.*$/, '$1') !== 'true') {
+    // Render the RaiBlocks button
+
+    brainblocks.Button.render({
+
+      // Pass in payment options
+
+      payment: {
+        destination: '{{ site.nano_wallet }}',
+        currency: 'gbp',
+        amount: '1'
+      },
+
+      // Handle successful payments
+
+      onPayment: function (data) {
+        console.log('Payment successful!', data.token)
+        document.cookie = 'donated=true; expires=Fri, 31 Dec 9999 23:59:59 GMT'
+        document.cookie = 'token=' + data.token + '; expires=Fri, 31 Dec 9999 23:59:59 GMT'
+      }
+
+    }, '#nano-button');
+
+  } else {
+    var elem = document.getElementById('nano-thanks')
+    elem.classList.toggle('hide')
+  }
+</script>
