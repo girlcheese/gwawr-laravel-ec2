@@ -7,5 +7,3 @@ layout: default
 Twitter : [{{ site.twitter_username }}](http://twitter.com/{{ site.twitter_username }})
 
 {% include brainblocks.html %}
-
-{% include coinbase.html %}
